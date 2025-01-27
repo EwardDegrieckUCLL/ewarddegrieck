@@ -1,4 +1,4 @@
-# ewarddegrieck
+# ewarddegrieck.com
 
 This repo holds all web pages for ewarddegrieck.com
 
