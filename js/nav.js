@@ -1,11 +1,11 @@
 /* variables */
 const hamburgerMenu = document.querySelector('.hamburger-menu');
-const navMenu = document.querySelector('nav ul');
+const navList = document.querySelector('nav ul');
 
 /* functions */
 
 /* run code */
 hamburgerMenu.addEventListener('click', () => {
     hamburgerMenu.classList.toggle('active');
-    navMenu.classList.toggle('active');
+    navList.classList.toggle('active');
 });

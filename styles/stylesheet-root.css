@@ -1,0 +1,43 @@
+:root {
+    --bg-color: #fff;
+    --primary-color: rgb(0, 22, 132);
+    --secondary-color: rgb(8, 14, 62);
+    --text-color: rgb(33,33,33);
+
+    --ff-title: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    box-sizing: inherit;
+    margin: 0;
+    color: var(--text-color);
+}
+
+/* default elements */
+main {
+    background-color: rgb(242, 242, 242);
+    border-radius: 0.5em;
+    margin: 0.6rem;
+    padding: 0.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    opacity: 0.85;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    text-align: center;
+    font-family: var(--ff-title);
+    font-weight: 600;
+}
