@@ -50,6 +50,11 @@ img {
     height: auto;
 }
 
+img.center {
+    margin: 5rem auto;
+    
+}
+
 a {
     color: inherit;
 }
