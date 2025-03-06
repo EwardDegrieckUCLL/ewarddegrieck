@@ -107,10 +107,10 @@ body {
 }
 
 .gold-border-small {
-    filter: drop-shadow(2px 0 0 var(--color-gta-gold)) 
-            drop-shadow(0 2px 0 var(--color-gta-gold))
-            drop-shadow(-2px 0 0 var(--color-gta-gold)) 
-            drop-shadow(0 -2px 0 var(--color-gta-gold))
+    filter: drop-shadow(2.5px 0 0 var(--color-gta-gold)) 
+            drop-shadow(0 2.5px 0 var(--color-gta-gold))
+            drop-shadow(-2.5px 0 0 var(--color-gta-gold)) 
+            drop-shadow(0 -2.5px 0 var(--color-gta-gold))
 }
 
 .width-50 {
