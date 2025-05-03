@@ -27,7 +27,7 @@
 
 :root {
     --color-gta-gold: rgb(252,175,23);
-    --color-broken-white: rgb(239, 239, 239);
+    --color-broken-white: #DCDCDC;
 
     --img-shadow: 2.5px 2.5px 5px 1px rgb(121, 120, 120); 
     --subtle-shadow: 1.5px 1.5px 2px 0.5px rgb(97, 97, 97); 
