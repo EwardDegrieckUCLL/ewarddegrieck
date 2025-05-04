@@ -135,12 +135,19 @@ body {
 }
 
 /* typography */
+h1 {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
 h2 {
     padding: 0.5em 0;
     font-family: var(--title-font);
     color: #fff;
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 2.25rem;
     filter: drop-shadow(2.75px 0 0 #000) 
             drop-shadow(0 2.75px 0 #000)
             drop-shadow(-2.75px 0 0 #000) 
@@ -157,7 +164,7 @@ h3 {
     font-family: var(--text-font);
     color: #fff;
     background-color: #000;
-    font-size: 1.55rem;
+    font-size: 1.65rem;
     padding: 0.5rem;
     padding-left: 1rem;
     border-radius: 0.5em;
@@ -177,7 +184,16 @@ h4 {
 
 p, li, a {
     font-family: var(--text-font);
-    font-size: 1.15rem;
+    font-size: 1.2rem;
+}
+
+.go-back p, .go-back a {
+    padding-top: 2rem;
+    font-size: 1.65rem;
+}
+
+.go-back {
+    margin-left: 15%;
 }
 
 /* header and navigation */
@@ -419,6 +435,15 @@ article.employee-info figure{
         flex-direction: column;
         gap: 0;
     }
+}
+
+/* deelpagina reizen */
+ul.checklist {
+    padding-left: 2rem;
+}
+
+.checklist li {
+    font-size: 1.25em;
 }
 
 /* contact */

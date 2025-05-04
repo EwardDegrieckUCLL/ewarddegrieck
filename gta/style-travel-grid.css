@@ -1,0 +1,112 @@
+@import "./stylesheet.css";
+
+/* grid */
+.travel-grid {
+    padding-top: 1.75em;
+    display: grid;
+    gap: 2.5em;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (width > 45rem) {
+    .travel-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (width > 70rem) {
+    .travel-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* article element, wrapped inside a hyperlink */
+.travel-grid article {
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    background-color: white;
+    border-radius: 1.5em;
+    border: solid 5px var(--color-gta-gold);
+    box-shadow: var(--img-shadow);
+}
+
+.travel-grid article:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.travel-grid a {
+    text-decoration: none;
+}
+
+.travel-grid a:hover {
+    border: 0;
+}
+
+/* title */
+.travel-grid h3 {
+    font-size: 1.5em;
+    padding: 1rem 0 0 2rem;
+    color: #000;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* figure and image */
+.travel-grid img {
+    padding: 0 0.5rem;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+}
+
+.travel-grid figure {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.travel-grid figure img {
+    border-radius: 25px;
+}
+
+.travel-grid img:hover {
+    opacity: 1;
+}
+
+.travel-grid p img {
+    max-width: 50px;
+    border-radius: 0;
+}
+
+/* paragraphs */
+.travel-grid p {
+    margin: 0 0 0.5rem 7.5%;
+    padding-top: 0.75rem;
+    padding-left: 1rem;
+}
+
+.travel-grid p:first-of-type {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    text-transform: uppercase;
+}
+
+.travel-grid p:last-of-type {
+    font-size: 1.15em;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+
+.travel-grid p.green {
+    color: rgb(0, 160, 0);
+}
+
+.travel-grid p.red {
+    color: rgb(200, 0, 0);
+}
