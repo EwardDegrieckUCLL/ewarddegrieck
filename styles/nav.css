@@ -183,4 +183,9 @@ nav a:hover {
         transition: 0.5s ease;
         left: 0;
     }
+
+    .disable-scrolling {
+        height: 100%;
+        overflow-y: hidden;
+    }
 }
