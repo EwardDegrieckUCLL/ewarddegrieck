@@ -10,11 +10,12 @@ header {
 
 nav {
     margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 nav a {
     color: var(--secondary-color);
-    text-transform: lowercase;
+    font-weight: 700;
 }
 
 .uppercase a{
@@ -43,17 +44,6 @@ nav a:hover {
 .header-logo p {
     margin: 0;
     line-height: 0.75;
-}
-
-.header-logo .part-1 {
-    color: var(--primary-color);
-    transition: 0.3s ease;
-}
-
-.header-logo .part-2 {
-    color: var(--secondary-color);
-    font-size: 0.6em;
-    transition: 0.3s ease;
 }
 
 .header-logo:hover {
@@ -181,5 +171,10 @@ nav a:hover {
         visibility: visible;
         transition: 0.5s ease;
         left: 0;
+    }
+
+    .disable-scrolling {
+        height: 100%;
+        overflow-y: hidden;
     }
 }

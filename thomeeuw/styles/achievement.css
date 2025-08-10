@@ -26,7 +26,7 @@ figure {
 }
 
 #statistics-table td:first-child {
-    padding-right: 2em;
+    padding-right: 1.75em;
 }
 
 #statistics-table {
@@ -49,15 +49,15 @@ figure {
 }
 
 #achievements img.earned {
-    animation: glowing 1s infinite alternate;
+    animation: glowing 2s infinite alternate;
 }
 
 @keyframes glowing {
-  from {
-    box-shadow: 0 0 5px 3px #daa820; /* Initial glow state */
+  100% {
+    box-shadow: 0 0 1px 3px rgb(130, 0, 0); /* Initial glow state */
   }
-  to {
-    box-shadow: 0 0 10px 5px #b20f0f; /* Expanded glow state */
+  0%, 20% {
+    box-shadow: 0 0 12px 8px #d3af37; /* Expanded glow state */
   }
 }
 

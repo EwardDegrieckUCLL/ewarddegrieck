@@ -27,8 +27,8 @@ main {
 }
 
 main div.center {
-    max-width: 55rem;
-    padding-left: 25px;
+    max-width: 750px;
+    padding-left: 15px;
     margin: auto;
 }
 
@@ -80,17 +80,36 @@ img {
 }
 
 /* typography */
-h1, h2, h3, h4 {
+h1 {
+    color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+@media (width < 70rem) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+h2, h3, h4 {
     font-family: var(--ff-title);
     margin-bottom: 0.5em;
 }
 
-h1, h2 {
+h2 {
     color: var(--secondary-color);
 }
 
+h2 {
+    font-size: 2em;
+}
+
 h3 {
+    margin-top: 2rem;
     color: var(--ff-text);
+    font-size: 1.5rem;
 }
 
 main p {
