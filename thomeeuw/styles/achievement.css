@@ -33,6 +33,24 @@ figure {
     font-family: var(--ff-text);
 }
 
+/* streak */
+#streak figure {
+    max-width: 85px;
+}
+
+#streak div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1.5rem;
+}
+
+#streak p {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 2.25rem;
+}
+
 /* achievements */
 #achievements img {
     max-width: 150px;

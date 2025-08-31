@@ -1,4 +1,6 @@
 /* variables */
+const currentStreak = 1;
+
 const statistics = new Map();
 statistics.set('Totale turnover', '€0');
 statistics.set('Maximale winst','€0');
@@ -6,6 +8,7 @@ statistics.set('Totaal bedrag geïnvesteerd','€0');
 statistics.set('Totaal geïnvesteerd','€0');
 statistics.set('Datum eerste meeting','2025-07-30');
 statistics.set('Datum eerste factuur','n.v.t.');
+statistics.set('Maximale streak','1');
 
 const achievements = [
     {title: "100 EUR winst", img_url: "./img/100-EUR-winst", type: "geld", achieved: false},
@@ -75,6 +78,12 @@ const createAchievementElement = (achievement) => {
     return element;
 };
 
+const generateStreakFlames = (number) => {
+    const text = document.querySelector("#streak p")
+    text.innerHTML = `x ${number}`
+}
+
 /* run code */
 generateStatisticsTable(statistics);
 generateAchievementOverview(achievements);
+generateStreakFlames(currentStreak)

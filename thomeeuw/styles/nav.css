@@ -35,15 +35,14 @@ nav a:hover {
 
 .header-logo {
     display: flex;
-    flex-flow: column;
+    flex-direction: row;
     font-size: 3.5rem;
-    align-items: flex-end;
-    gap: 0.3rem;
+    align-items: baseline;
+    gap: 1.5rem;
 }
 
-.header-logo p {
-    margin: 0;
-    line-height: 0.75;
+.header-logo figure {
+    max-width: 150px;
 }
 
 .header-logo:hover {
@@ -52,34 +51,29 @@ nav a:hover {
 }
 
 @media (width < 55rem) {
-    .header-logo p{
+    .header-logo h1{
         font-size: 0.85em;
+        transition: 0.3s ease;
+    }
+
+    .header-logo figure {
+        max-width: 100px;
         transition: 0.3s ease;
     }
 
     header {
         margin-bottom: 1.5rem;
     }
-
-    .header-logo .part-2 {
-        font-size: 0.48em;
-        transition: 0.3s ease;
-    }
 }
 
 @media (width < 35rem) {
-    .header-logo p {
-        font-size: 0.7em;
+    .header-logo h1 {
+        display: none;
         transition: 0.3s ease;
     }
 
     header {
         margin-bottom: 1.25rem;
-    }
-
-    .header-logo .part-2 {
-        font-size: 0.4em;
-        transition: 0.3s ease;
     }
 }
 
