@@ -463,6 +463,11 @@ td {
     padding: 0.2rem 0 0.4rem 0;
 }
 
+th {
+    font-weight: 700;
+    text-align: left;
+}
+
 @media (width > 58rem) {
     tr td:first-child {
         max-width: 70px;
