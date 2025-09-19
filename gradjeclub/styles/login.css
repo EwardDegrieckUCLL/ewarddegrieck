@@ -1,0 +1,107 @@
+/* header */
+.header-logo {
+    margin: 2.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.logo-img {
+    max-width: 130px;
+    filter: drop-shadow(2px 0 0 var(--primary-color)) 
+            drop-shadow(0 2px 0 var(--primary-color))
+            drop-shadow(-2px 0 0 var(--primary-color)) 
+            drop-shadow(0 -2px 0 var(--primary-color));
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+h1 {
+    font-family: var(--ff-logo);
+    font-size: 4.5em;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+p.center {
+    text-align: center;
+}
+
+/* header small screen */
+@media (width < 40rem) {
+    .header-logo {
+    margin: 1.5rem 0;
+    gap: 1.5rem;
+}
+    
+    .logo-img {
+    max-width: 90px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+}
+
+/* login window */
+#login {
+    background-color: #FFF;
+    border-radius: 2.5em;
+    max-width: 55ch;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 7px #cecece;
+}
+
+#login > p:first-of-type {
+    color: #5a5a5a;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+label {
+    font-family: var(--ff-text);
+    margin-top: 0.8em;
+}
+
+label, input, button {
+    font-size: 1.15em;
+}
+
+button {
+    align-self: center;
+    width: 10ch;
+    margin: 2em 0 1em 0;
+    padding: 0.3em 0.6em;
+    background: var(--tertiary-color);
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
+    font-family: var(--ff-title);
+    font-weight: 600;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: rgb(255, 202, 95);
+}
+
+
+/* footer */
+footer, footer a {
+    color: var(--primary-color);
+}
