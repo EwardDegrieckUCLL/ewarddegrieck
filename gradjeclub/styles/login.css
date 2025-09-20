@@ -76,6 +76,10 @@ label {
     margin-top: 0.8em;
 }
 
+input {
+    border-radius: 0.4em;
+}
+
 label, input, button {
     font-size: 1.15em;
 }
@@ -99,7 +103,6 @@ button {
 button:hover {
     background-color: rgb(255, 202, 95);
 }
-
 
 /* footer */
 footer, footer a {

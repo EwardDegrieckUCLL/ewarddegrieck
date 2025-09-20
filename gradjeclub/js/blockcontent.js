@@ -40,8 +40,8 @@ const blockContent = () => {
 };
 
 /* run code */
-if (accessLocked) {
+if (accessLocked()) {
     logButton.innerHTML = `<a href="./login.html">Log in</a>`;
     blockContent();
-    console.log("hallogers")
+    console.log(accessLocked);
 };
