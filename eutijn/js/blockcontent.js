@@ -33,7 +33,7 @@ const blockContent = () => {
     div.appendChild(p2);
 
     const figure = document.createElement("figure");
-    figure.innerHTML = `<img class="beware-boxer" src="./img/boxer-beware.jpg" alt="beware boxer guard on duty">`
+    figure.innerHTML = `<img class="locked-img" src="./img/warning.jpg" alt="warning sign lego">`
 
     section.appendChild(div);
     section.appendChild(figure);   
@@ -41,7 +41,7 @@ const blockContent = () => {
 
 /* run code */
 if (accessLocked()) {
-    logButton.innerHTML = `<a href="./login.html">Log in</a>`;
+    logButton.innerHTML = `<a href="./login.html">Log&nbsp;in</a>`;
     blockContent();
     console.log(accessLocked);
 };

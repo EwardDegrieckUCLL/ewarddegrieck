@@ -1,16 +1,16 @@
 @font-face {
-    font-family: 'Rage Italic';
-    src: url(../fonts/rageitalic.ttf);
+    font-family: 'LEGO hollow';
+    src: url(../fonts/lego-hollow.ttf);
 }
 
 :root {
-    --primary-color: rgb(28, 28, 28);
+    --primary-color: rgb(227, 0, 11);
     --secondary-color: rgb(242, 242, 242);
-    --tertiary-color: rgb(252,175,23);
+    --tertiary-color: rgb(255, 255, 0);
 
     --ff-title: "Roboto", sans-serif;
     --ff-text: "Lora", serif;
-    --ff-logo: "Rage Italic", sans-serif;
+    --ff-logo: "LEGO hollow", sans-serif;
 
     --shadow: 0.1em 0.1em 0.15em rgb(90, 90, 90);
 }
@@ -158,20 +158,20 @@ main section {
 }
 
 /* locked site */
-.beware-boxer {
+.locked-img {
     border-radius: 0.5em;
     max-height: 400px;
 }
 
 @media (width < 58rem) {
-    .beware-boxer {
+    .locked-img {
         max-height: 250px;
     }
 }
 
 
 /* for identifying javascript objects */
-.red {
-    color: red;
-    background-color: red;
+.purple {
+    color: purple;
+    background-color: purple;
 }
