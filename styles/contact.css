@@ -1,0 +1,51 @@
+/* form */
+form {
+    display: flex;
+    gap: 0.35rem;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    margin-right: 4rem;
+    font-family: var(--ff-text);
+    font-size: 1.1rem;
+}
+
+form p{
+    font-size: 1rem;
+}
+
+input, textarea#bericht {
+    margin-bottom: 0.75rem;
+    width: 85%;
+    border-radius: 0.35rem;
+    border: solid 1px rgb(98, 98, 98);
+    font-size: 1rem;
+}
+
+textarea#bericht {
+    width: 40ch;
+    height: 20ch;
+    padding-right: 0.5em;
+}
+
+input#submit {
+    font-family: var(--ff-title);
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem;
+    box-shadow: var(--shadow);
+    font-size: 1.1rem;
+}
+
+input#submit:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    box-shadow: none;
+}
+
+@media (width < 55rem) {
+    form{
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
