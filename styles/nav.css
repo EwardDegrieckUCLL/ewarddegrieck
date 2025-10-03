@@ -13,7 +13,7 @@ nav {
 }
 
 nav a {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-transform: lowercase;
 }
 
@@ -22,10 +22,10 @@ nav a {
 }
 
 nav a:hover, .current-page a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: 600;
     padding-bottom: 0.3em;
-    border-bottom: 3.75px solid var(--primary-color);
+    border-bottom: 3.75px solid var(--secondary-color);
 }
 
 nav a:hover {

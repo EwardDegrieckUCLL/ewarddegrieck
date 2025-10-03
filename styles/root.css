@@ -1,7 +1,7 @@
 :root {
     --bg-color: #fff;
-    --primary-color: rgb(0, 12, 148);
-    --secondary-color: rgb(0, 8, 72);
+    --primary-color: rgb(0, 8, 72);
+    --secondary-color: rgb(0, 12, 148);
     --text-color: rgb(28, 28, 28);
 
     --ff-title: "Roboto", sans-serif;
@@ -36,7 +36,7 @@ header a {
 }
 
 main a, footer a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: 800;
 }
 
@@ -48,7 +48,7 @@ main a:hover, footer a:hover {
 
 main p {
     margin: 0.5em 0;
-    max-width: 70ch;
+    max-width: 55ch;
     font-size: 1.15rem;
 }
 
@@ -89,4 +89,33 @@ h3 {
 
 main p {
     font-family: var(--ff-text);
+}
+
+/* page sections */
+section.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+@media (width < 55rem) {
+    section.flex-container {
+        gap: 0rem;
+    }
+
+    section.flex-container.img-right {
+        flex-direction: column;
+    }
+
+    section.flex-container.img-left {
+        flex-direction: column-reverse;
+    }
+}
+
+section img {
+    max-width: 200px;
+    border-radius: 2em;
+    box-shadow: var(--shadow);
 }
