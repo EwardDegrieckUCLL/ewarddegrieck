@@ -35,6 +35,7 @@ input#submit {
     padding: 0.5rem;
     box-shadow: var(--shadow);
     font-size: 1.1rem;
+    transition: 0.3s ease-in-out;
 }
 
 input#submit:hover {
@@ -48,4 +49,8 @@ input#submit:hover {
         margin-right: 0;
         margin-bottom: 3rem;
     }
+
+    textarea#bericht {
+    width: 30ch;
+}
 }
