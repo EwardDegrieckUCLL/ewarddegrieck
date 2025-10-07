@@ -9,8 +9,17 @@ form {
     font-size: 1.1rem;
 }
 
-form p{
+form p {
     font-size: 1rem;
+}
+
+form label {
+    font-weight: 600;
+}
+
+p:has(+form) {
+    max-width: 35ch;
+    margin-bottom: 1.25rem;
 }
 
 input, textarea#bericht {
@@ -30,7 +39,7 @@ textarea#bericht {
 input#submit {
     font-family: var(--ff-title);
     font-weight: 600;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: #fff;
     padding: 0.5rem;
     box-shadow: var(--shadow);
@@ -39,7 +48,7 @@ input#submit {
 }
 
 input#submit:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     cursor: pointer;
     box-shadow: none;
 }
@@ -52,5 +61,10 @@ input#submit:hover {
 
     textarea#bericht {
     width: 30ch;
+    }
 }
+
+#submit-response p:first-child{
+    color: red;
+    font-size: 1.25rem;
 }
