@@ -15,10 +15,8 @@
 
     <link rel="stylesheet" href="./styles/root.css">
     <link rel="stylesheet" href="./styles/nav.css">
-    <link rel="stylesheet" href="./styles/websites.css">
 
     <script src="./js/nav.js" defer></script>
-    <script src="./js/websites.js" defer></script>
 </head>
 <body>
     <header>
@@ -36,21 +34,25 @@
             </div>
             <ul>
                 <li class="current-page"><a href="./index.html">Home</a></li>
-                <li><a href="./websites.html">Websites</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Nood aan een eigen website?</h2>
-            <p>... zoek niet verder, ik help je graag!</p>
-            <p></p>
+        <section class="flex-container img-left">
+            <figure><img src="./img/website-globe.jpg" alt="website logo"></figure>
+            <div>
+                <h2>Nood aan een eigen website?</h2>
+                <p>... zoek niet verder, ik help je graag!</p> 
+                <p>Neem <a href="./contact.html">contact</a> op voor meer info of om een afspraak in te plannen.</p>
+            </div>
         </section>
-        <section>
-            <h2>Websites</h2>
-            <div id="websites"></div>
+        <section class="flex-container img-right">
+            <div>
+                <h2>Nog even geduld</h2>
+                <p>Aan deze site wordt nog gewerkt!</p>
+            </div>
+            <figure><img src="./img/geduld.jpg" alt="geduld logo"></figure>
         </section>
     </main>
     <footer>&copy; Copyright 2025 - <a href="https://www.ewarddegrieck.com">ewarddegrieck.com</a></footer>
