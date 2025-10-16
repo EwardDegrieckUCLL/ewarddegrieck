@@ -67,4 +67,5 @@ input#submit:hover {
 #submit-response p:first-child{
     color: red;
     font-size: 1.25rem;
+    font-weight: 600;
 }
