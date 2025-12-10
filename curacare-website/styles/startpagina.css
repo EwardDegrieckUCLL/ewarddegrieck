@@ -36,7 +36,7 @@ section.social-media {
 section.social-media > div {
     display: flex;
     margin: auto;
-    gap: 5em;
+    gap: 2em;
 }
 
 section.social-media img {

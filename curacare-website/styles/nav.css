@@ -170,3 +170,9 @@ nav a:hover {
         overflow-y: hidden;
     }
 }
+
+@media (width < 510px) {
+    .header-logo p {
+        display: none;
+    }
+}
