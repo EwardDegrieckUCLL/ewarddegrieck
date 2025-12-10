@@ -74,6 +74,8 @@ div.single-date {
 #evenementen img {
     box-shadow: none;
     border-radius: 0;
+    max-width: none;
+    max-height: 200px;
 }
 
 .img-container {
@@ -82,7 +84,6 @@ div.single-date {
   justify-content: center;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
-  max-height: 200px;
 }
 
 #evenementen h4 {
