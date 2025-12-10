@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="icon" href="./img/curacare-logo.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fragment+Mono:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fragment+Mono:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/root.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/scroll-animation.css">
+    <link rel="stylesheet" href="./styles/startpagina.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/scroll-animation.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="scroll-watcher"></div>
+        <a href="./index.html">
+            <div class="header-logo">
+                <img src="./img/curacare-logo.png" alt="Curacare logo">
+                <p>Curacare</p>
+            </div>
+        </a>
+        <nav>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="./index.html">Start</a></li>
+                <li><a href="./diensten.html">Diensten</a></li>
+                <li><a href="./evenementen.html">Evenementen</a></li>
+                <li class="current-page"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="flex-container img-left" id="contact-section">
+            <figure><img src="./img/mail.png" alt="mail symbool "></figure>
+            <div>
+                <h2>Contactformulier</h2>
+                <p>Heb je een vraag? Vul dan onderstaand formulier in om contact op te nemen!</p>
+                <form action="">
+                    <label for="naam">Naam (*)</label>
+                    <input type="text" id="naam" name="name" required>
+                    <label for="e-mail">E-mailadres (*)</label>
+                    <input type="email" id="e-mail" name="email" required>
+                    <label for="telefoon">Telefoonnummer</label>
+                    <input type="tel" id="telefoon" name="telephone">
+                    <label for="bericht">Bericht (*)</label>
+                    <textarea id="bericht" name="message" required></textarea>
+                    <p>(*) verplichte velden</p>
+                    <input id="submit" type="submit" value="Verstuur bericht">
+                </form>
+                <div id="submit-response"></div>
+            </div>
+        </section>
+        <section class="social-media">
+            <h2>Volg ons op ...</h2>
+            <div>
+                <div>
+                    <a href="https://www.facebook.com/curacare.be" target="_blank">
+                        <h3>Facebook</h3>
+                        <img src="./img/foxtrot-facebook.png" alt="Foxtrot Facebook logo">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/curacare_support_transport/" target="_blank">
+                        <h3>Instagram</h3>
+                        <img src="./img/foxtrot-instagram.png" alt="Foxtrot Instagram logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <section>
+                <h2>Nieuwsbrief</h2>
+                <p>Wil je graag op de hoogte zijn van onze laatste nieuwtjes?</p>
+                <p>Klik dan <a href="">hier</a> om je in te schrijven voor onze nieuwsbrief.</p>
+            </section>
+            <section>
+                <h2>Contactgegevens</h2>
+                <p><a href="mailto:info@curacare.be">info@curacare.be</a></p>
+                <p><a href="tel:">050/00 00 00</a></p>
+            </section>
+            <section>
+                <h2>Ondernemingsnummer</h2>
+                <p>BE99 9999 999</p>
+            </section>
+        </div>
+        <p>&copy; 2026 - Curacare - All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

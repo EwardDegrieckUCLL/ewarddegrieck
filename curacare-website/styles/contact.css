@@ -1,0 +1,85 @@
+#contact-section img {
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 220px;
+}
+
+@media (width < 880px) {
+    #contact-section img {
+        display: none;
+    }
+}
+
+/* form */
+#contact-section form {
+    display: flex;
+    gap: 0.35rem;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-bottom: 0;
+    font-family: var(--ff-text);
+    font-size: 1.1rem;
+}
+
+form p {
+    font-size: 1rem;
+}
+
+form label {
+    font-weight: 600;
+}
+
+p:has(+form) {
+    max-width: 35ch;
+    margin-bottom: 1.25rem;
+}
+
+input, textarea#bericht {
+    margin-bottom: 0.75rem;
+    width: 85%;
+    border-radius: 0.35rem;
+    border: solid 1px rgb(98, 98, 98);
+    background-color: var(--clear-white);
+    font-size: 1rem;
+}
+
+textarea#bericht {
+    width: 40ch;
+    height: 20ch;
+    padding-right: 0.5em;
+}
+
+input#submit {
+    font-family: var(--ff-title);
+    font-weight: 600;
+    background-color: var(--curacare-red);
+    border-color: var(--curacare-red);
+    color: var(--clear-white);
+    padding: 0.5rem;
+    box-shadow: var(--shadow);
+    font-size: 1.1rem;
+    transition: 0.3s ease-in-out;
+}
+
+input#submit:hover {
+    background-color: rgb(170, 22, 44);
+    border-color: rgb(170, 22, 44);
+    cursor: pointer;
+    box-shadow: none;
+}
+
+@media (width < 55rem) {
+    #contact-section form{
+        margin-right: 0;
+    }
+
+    textarea#bericht {
+    width: 30ch;
+    }
+}
+
+#submit-response p:first-child{
+    color: red;
+    font-size: 1.25rem;
+    font-weight: 600;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startpagina</title>
+
+    <link rel="icon" href="./img/curacare-logo.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fragment+Mono:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fragment+Mono:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/root.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/scroll-animation.css">
+    <link rel="stylesheet" href="./styles/startpagina.css">
+
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/scroll-animation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="scroll-watcher"></div>
+        <a href="./index.html">
+            <div class="header-logo">
+                <img src="./img/curacare-logo.png" alt="Curacare logo">
+                <p>Curacare</p>
+            </div>
+        </a>
+        <nav>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li class="current-page"><a href="./index.html">Start</a></li>
+                <li><a href="./diensten.html">Diensten</a></li>
+                <li><a href="./evenementen.html">Evenementen</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="flex-container img-right">
+            <div>
+                <h2>Specialisten in kritieke zorg</h2>
+                <p>Het Curacare-team bestaat uit <em>artsen en verpleegkundigen</em> met diverse specialisaties. Zo bestaat ons team uit verschillende artsen, telkens met een <em>specialistische achtergrond in de kritieke zorg</em>. Het verpleegkundig team bestaat uit ervaren mensen met een uitgebreide kennis van kritieke pathologie, die ze dagelijks toepassen in de prehospitale zorg, spoedgevallen, operatiekwartier en intensieve zorgen. Met interne opleidingen wordt deze kennis verder ontwikkeld en doorgegeven aan elkaar.</p>
+            </div>
+            <figure><img src="./img/curacare-team.jpg" alt="curacare team"></figure>
+        </section>
+        <section class="flex-container img-left">
+            <figure><img src="./img/curacare-signalisatie.jpg" alt="motorrijder met signalisatieteken"></figure>
+            <div>
+                <h2>Professionele motorrijders</h2>
+                <p>Niet enkel een sterke medische achtergrond is van tel, zo is een sterke basis aan motorbeheersing ook een absolute vereiste. Op deze basis bouwen we met interne en externe instructeur van Motor opleiding Seba verder door tal van opleidingsdagen te organiseren. We werken samen met politiekorpsen, rijschool UvA  voor onroad en Backtrail voor offroad opleidingen. Voor alle doorgedreven gespecialiseerde opleidingen berusten we op Motor opleiding Seba. Hiermee trekken we het rijvaardigheid niveau op tot een professionele standaard.</p>
+            </div>
+        </section>
+        <section class="flex-container img-right">
+            <div>
+                <h2>Gepassioneerde vrijwilligers</h2>
+                <p>Alle teamleden zijn vrijwillig betrokken bij Curacare en hebben een gedeelde visie op de specifieke en hoogstaande hulpverlening vanop de motorfiets. Wat voor velen gestart is als een uit de hand gelopen hobby, is nu uitgegroeid tot een passie.</p>
+            </div>
+            <figure><img src="./img/curacare-kegels-ontwijken.jpg" alt="motorrijder ontwijkt kegels"></figure>
+        </section>
+        <section class="social-media">
+            <h2>Volg ons op ...</h2>
+            <div>
+                <div>
+                    <a href="https://www.facebook.com/curacare.be" target="_blank">
+                        <h3>Facebook</h3>
+                        <img src="./img/foxtrot-facebook.png" alt="Foxtrot Facebook logo">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/curacare_support_transport/" target="_blank">
+                        <h3>Instagram</h3>
+                        <img src="./img/foxtrot-instagram.png" alt="Foxtrot Instagram logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="sponsors">
+            <h2>Onze sponsors</h2>
+            <p>Curacare wordt mede mogelijk gemaakt dankzij...</p>
+            <div id="sponsor-logos">
+                <a href="https://www.backtrail.be/" target="_blank"><img src="./img/sponsors/backtrail.png" alt="backtrail logo"></a>
+                <a href="https://bmsteam.be/" target="_blank"><img src="./img/sponsors/BMS-team.png" alt=""></a>
+                <a href="https://www.bmw-motorrad.be/nl/home.html" target="_blank"><img src="./img/sponsors/bmw_motorrad.png" alt=""></a>
+                <a href="https://www.damenmotorkleding.nl/" target="_blank"><img src="./img/sponsors/damen.png" alt=""></a>
+                <a href="https://www.demuyersolutions.be/" target="_blank"><img src="./img/sponsors/dm-solutions.jpeg" alt=""></a>
+                <a href="https://www.grenspalenklassieker.nl/" target="_blank"><img src="./img/sponsors/grenspaal-klassieker.png" alt=""></a>
+                <a href="https://golazotravel.be/" target="_blank"><img src="./img/sponsors/golazo-travel.png" alt=""></a>
+                <a href="https://www.meeusenmotoren.be/" target="_blank"><img src="./img/sponsors/meeusen.png" alt=""></a>
+                <a href="https://motoutlet.be/" target="_blank"><img src="./img/sponsors/moto-outlet.png" alt=""></a>
+                <a href="https://www.facebook.com/motoropleidingseba/" target="_blank"><img src="./img/sponsors/motor-opleiding-seba.png" alt=""></a>
+                <a href="https://motusmedia.be/" target="_blank"><img src="./img/sponsors/motus-media.png" alt=""></a>
+                <a href="https://www.politieantwerpen.be/" target="_blank"><img src="./img/sponsors/politie-antwerpen.png" alt=""></a>
+                <a href="https://www.facebook.com/pzglm/?locale=nl_BE" target="_blank"><img src="./img/sponsors/PZ-GLM.png" alt=""></a>
+                <a href="https://www.pzneteland.be/" target="_blank"><img src="./img/sponsors/PZ-neteland.png" alt=""></a>
+                <a href="https://www.uva.be/" target="_blank"><img src="./img/sponsors/rijschool-UVA.png" alt=""></a>
+                <a href="https://www.staroflifeteam.eu/" target="_blank"><img src="./img/sponsors/star-of-life.png" alt=""></a>
+                <a href="https://zenith.graphics/" target="_blank"><img src="./img/sponsors/zenith-graphics.png" alt=""></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <section>
+                <h2>Nieuwsbrief</h2>
+                <p>Wil je graag op de hoogte zijn van onze laatste nieuwtjes?</p>
+                <p>Klik dan <a href="">hier</a> om je in te schrijven voor onze nieuwsbrief.</p>
+            </section>
+            <section>
+                <h2>Contactgegevens</h2>
+                <p><a href="mailto:info@curacare.be">info@curacare.be</a></p>
+                <p><a href="tel:">050/00 00 00</a></p>
+            </section>
+            <section>
+                <h2>Ondernemingsnummer</h2>
+                <p>BE99 9999 999</p>
+            </section>
+        </div>
+        <p>&copy; 2026 - Curacare - All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
