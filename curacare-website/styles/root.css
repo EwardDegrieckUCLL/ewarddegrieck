@@ -185,3 +185,20 @@ section.flex-container {
         max-width: 300px;
     }
 }
+
+/* back to top */
+p#back-to-top {
+    color: var(--clear-white);
+    background-color: var(--dark-black);
+    padding: 0.2rem 1rem 0.3rem 1rem;
+    border-radius: 3em;
+    margin-bottom: 0.75rem;
+}
+
+p#back-to-top:hover {
+    color: var(--dark-black);
+    background-color: inherit;
+    border: solid 1.5px var(--dark-black);
+    cursor: pointer;
+    transition: 0.5s ease;
+}

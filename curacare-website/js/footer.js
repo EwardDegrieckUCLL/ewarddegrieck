@@ -52,5 +52,19 @@ const genereerFooter = () => {
     footerElement.appendChild(pCopyRight);
 };
 
+const genereerBackToTop = () => {
+    const main = document.querySelector("main");
+    const p = document.createElement("p");
+    p.id = "back-to-top";
+    p.innerHTML = "&#8617; Terug naar boven";
+    main.appendChild(p);
+};
+
 /* run code */
 genereerFooter();
+genereerBackToTop();
+const backToTop = document.querySelector("#back-to-top");
+backToTop.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+    }
+);
