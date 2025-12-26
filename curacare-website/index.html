@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startpagina</title>
 
-    <link rel="icon" href="./img/curacare-logo.png" type="image/png">
+    <link rel="icon" href="./img/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,33 +20,23 @@
     <link rel="stylesheet" href="./styles/scroll-animation.css">
     <link rel="stylesheet" href="./styles/startpagina.css">
 
+    <script src="./js/header.js" defer></script>
     <script src="./js/nav.js" defer></script>
     <script src="./js/scroll-animation.js" defer></script>
+    <script src="./js/footer.js" defer></script>
+
 </head>
 <body>
-    <header>
-        <div class="scroll-watcher"></div>
-        <a href="./index.html">
-            <div class="header-logo">
-                <img src="./img/curacare-logo.png" alt="Curacare logo">
-                <p>Curacare</p>
-            </div>
-        </a>
-        <nav>
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul>
-                <li class="current-page"><a href="./index.html">Start</a></li>
-                <li><a href="./diensten.html">Diensten</a></li>
-                <li><a href="./evenementen.html">Evenementen</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header></header>
     <main>
+        <section class="flex-container img-left">
+            <figure><img src="." alt="intro video"></figure>
+            <div>
+                <h2>Snelle zorg, altijd binnen bereik</h2>
+                <p>Bij Curacare brengen wij medische zorg naar u toe, waar u ook bent. Ons toegewijde team van <em>gespecialiseerde artsen en verpleegkundigen</em> levert medische bijstand op maat tijdens mobiele evenementen. Met onze motorfietsen zijn wij overal snel ter plaatse. Wij combineren onze medische expertise met mobiliteit zodat u onbezorgd van uw evenement kan genieten.</p>
+                <p>Een medische motorfiets biedt enkele unieke voordelen ten opzichte van een ambulance. Dankzij hun <em>wendbaarheid en snelheid</em> kunnen onze motorartsen en -verpleegkundigen snel door moeilijk toegankelijke gebieden navigeren zoals bij <em>evenementen, festivals en sportwedstrijden</em>. Dit stelt ons in staat om in de cruciale eerste minuten medische hulp te bieden, vaak nog voordat een ambulance ter plaatse is kunnen komen.</p>
+            </div>
+        </section>
         <section class="flex-container img-right">
             <div>
                 <h2>Specialisten in kritieke zorg</h2>
@@ -58,15 +48,23 @@
             <figure><img src="./img/curacare-signalisatie.jpg" alt="motorrijder met signalisatieteken"></figure>
             <div>
                 <h2>Professionele motorrijders</h2>
-                <p>Niet enkel een sterke medische achtergrond is van tel, zo is een sterke basis aan motorbeheersing ook een absolute vereiste. Op deze basis bouwen we met interne en externe instructeur van Motor opleiding Seba verder door tal van opleidingsdagen te organiseren. We werken samen met politiekorpsen, rijschool UvA  voor onroad en Backtrail voor offroad opleidingen. Voor alle doorgedreven gespecialiseerde opleidingen berusten we op Motor opleiding Seba. Hiermee trekken we het rijvaardigheid niveau op tot een professionele standaard.</p>
+                <p>Niet enkel een sterke medische achtergrond is van tel, zo is een <em>sterke basis aan motorbeheersing</em> ook een absolute vereiste. Op deze basis bouwen we met interne en externe instructeur van Motor opleiding Seba verder door tal van opleidingsdagen te organiseren. We werken samen met politiekorpsen, rijschool UvA  voor onroad en Backtrail voor offroad opleidingen. Voor alle doorgedreven gespecialiseerde opleidingen berusten we op Motor opleiding Seba. Hiermee trekken we het rijvaardigheid niveau op tot een <em>professionele standaard</em>.</p>
             </div>
         </section>
         <section class="flex-container img-right">
             <div>
                 <h2>Gepassioneerde vrijwilligers</h2>
-                <p>Alle teamleden zijn vrijwillig betrokken bij Curacare en hebben een gedeelde visie op de specifieke en hoogstaande hulpverlening vanop de motorfiets. Wat voor velen gestart is als een uit de hand gelopen hobby, is nu uitgegroeid tot een passie.</p>
+                <p>Alle teamleden zijn <em>vrijwillig betrokken bij Curacare</em> en hebben een gedeelde visie op de specifieke en <em>hoogstaande hulpverlening</em> vanop de motorfiets. Wat voor velen gestart is als een uit de hand gelopen hobby, is nu uitgegroeid tot een <em>passie</em>.</p>
             </div>
             <figure><img src="./img/curacare-kegels-ontwijken.jpg" alt="motorrijder ontwijkt kegels"></figure>
+        </section>
+        <section class="flex-container img-left foxtrot">
+            <figure><img src="./img/foxtrot-basic.png" alt="Foxtrot afbeelding"></figure>
+            <div>
+                <h2>FOXTROT</h2>
+                <p id="foxtrot-slogan">First On The spot To Respond, Objectify and Treat</p>
+                <p>Ken je onze mascotte al? Hij heet FOXTROT en is de eerste ter plaatse. Hij is slim, vinnig, en kan zowel goed in groep als alleen werken. Net zoals de hulpverleners van Curacare.</p>
+            </div>
         </section>
         <section class="social-media">
             <h2>Volg ons op ...</h2>
@@ -86,14 +84,14 @@
             </div>
         </section>
         <section class="sponsors">
-            <h2>Onze sponsors</h2>
+            <h2>Onze partners</h2>
             <p>Curacare wordt mede mogelijk gemaakt dankzij...</p>
             <div id="sponsor-logos">
                 <a href="https://www.backtrail.be/" target="_blank"><img src="./img/sponsors/backtrail.png" alt="backtrail logo"></a>
                 <a href="https://bmsteam.be/" target="_blank"><img src="./img/sponsors/BMS-team.png" alt=""></a>
                 <a href="https://www.bmw-motorrad.be/nl/home.html" target="_blank"><img src="./img/sponsors/bmw_motorrad.png" alt=""></a>
                 <a href="https://www.damenmotorkleding.nl/" target="_blank"><img src="./img/sponsors/damen.png" alt=""></a>
-                <a href="https://www.demuyersolutions.be/" target="_blank"><img src="./img/sponsors/dm-solutions.jpeg" alt=""></a>
+                <a href="https://www.demuyersolutions.be/" target="_blank"><img src="./img/sponsors/dm-solutions.png" alt=""></a>
                 <a href="https://www.grenspalenklassieker.nl/" target="_blank"><img src="./img/sponsors/grenspaal-klassieker.png" alt=""></a>
                 <a href="https://golazotravel.be/" target="_blank"><img src="./img/sponsors/golazo-travel.png" alt=""></a>
                 <a href="https://www.meeusenmotoren.be/" target="_blank"><img src="./img/sponsors/meeusen.png" alt=""></a>
@@ -109,24 +107,6 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <section>
-                <h2>Nieuwsbrief</h2>
-                <p>Wil je graag op de hoogte zijn van onze laatste nieuwtjes?</p>
-                <p>Klik dan <a href="">hier</a> om je in te schrijven voor onze nieuwsbrief.</p>
-            </section>
-            <section>
-                <h2>Contactgegevens</h2>
-                <p><a href="mailto:info@curacare.be">info@curacare.be</a></p>
-                <p><a href="tel:">050/00 00 00</a></p>
-            </section>
-            <section>
-                <h2>Ondernemingsnummer</h2>
-                <p>BE99 9999 999</p>
-            </section>
-        </div>
-        <p>&copy; 2026 - Curacare - All Rights Reserved.</p>
-    </footer>
+    <footer></footer>
 </body>
 </html>

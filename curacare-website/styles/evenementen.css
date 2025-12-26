@@ -1,5 +1,6 @@
 section {
     margin-bottom: 0;
+    padding-left: 3rem;
 }
 
 #evenementen h3 {
@@ -42,7 +43,7 @@ article {
     border-radius: 1.8em;
     border-top-left-radius: 0.6em;
     position: relative;
-    max-width: 255px;
+    max-width: 220px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -75,7 +76,7 @@ div.single-date {
     box-shadow: none;
     border-radius: 0;
     max-width: none;
-    max-height: 200px;
+    max-height: 220px;
 }
 
 .img-container {

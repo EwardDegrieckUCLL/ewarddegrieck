@@ -4,7 +4,16 @@ const evenementen = [
     {naam: "REcycle2PARIS", locatie: "Parijs", land: "FR", startDatum: "2025-06-14", eindDatum: "2025-06-16", fotoURL: "recycle2paris.jpeg", link: "recycle2paris"},
     {naam: "Grenspalenklassieker Brabantse Wal", locatie: "Bergen op Zoom", land: "NL", startDatum: "2025-05-17", eindDatum: null, fotoURL: "gpk-brabantsewal.jpeg", link: "gpk-brabantse-wal"},
     {naam: "Dwars door Hasselt", locatie: "Hasselt", land: "BE", startDatum: "2024-10-06", eindDatum: null, fotoURL: "dwars-door-hasselt.jpg", link: "dwars-door-hasselt"
-    }
+    },
+    {naam: "Gravel4air", locatie: "Terziet", land: "NL", startDatum: "2025-06-19", eindDatum: "2025-06-21", fotoURL: "gravel4air.jpg", link: "gravel4air"},
+    {naam: "Klimmen tegen MS", locatie: "Mont Ventoux", land: "FR", startDatum: "2025-06-09", eindDatum: null, fotoURL: "klimmen-tegen-MS.jpeg", link: "klimmen-tegen-MS"},
+    {naam: "UVA Bochtenstage Ardennen", locatie: "Ardennen", land: "BE", startDatum: "2025-05-11", eindDatum: null, fotoURL: "bochtenstage-ardennen.jpeg", link: "bochtenstage-ardennen"},
+    {naam: "Sporta - Mon Ventoux", locatie: "Mont Ventoux", land: "FR", startDatum: "2024-06-22", eindDatum: null, fotoURL: "sporta-mt-ventoux.jpg", link: "sporta-mont-ventoux"},
+    {naam: "Gooische 200 - Gravelride", locatie: "Hilversum", land: "NL", startDatum: "2024-10)05", eindDatum: null, fotoURL: "gooische200.jpeg", link: "gooische200"},
+    {naam: "Rijopleiding politie GLM", locatie: "Olen", land: "BE", startDatum: "2025-05-15", eindDatum: null, fotoURL: "rijopleiding-GLM.jpeg", link: "rijopleiding-GLM"},
+    {naam: "Fietstocht politie Neteland", locatie: "Grobbendonk", land: "BE", startDatum: "2025-05-22", eindDatum: null, fotoURL: "fietstocht-neteland.jpeg", link: "fietstocht-neteland"},
+    {naam: "Motorwijding Jette", locatie: "Jette", land: "BE", startDatum: "2025-05-29", eindDatum: null, fotoURL: "motorwijding.jpeg", link: "motorwijding-jette"},
+    {naam: "De hel van Klimmen", locatie: "Heuvelland", land: "NL", startDatum: "2025-05-31", eindDatum: null, fotoURL: "hel-van-klimmen.jpeg", link: "hel-van-klimmen"},
 ];
 
 const maanden = [
@@ -53,9 +62,14 @@ const getEvenementenPerJaar = (evenementen) => {
     return result;
 };
 
+const sorteerPerJaarOmgekeerdAlsArray = (evenementenPerJaar) => {
+    return Object.entries(evenementenPerJaar)
+        .sort(([yearA], [yearB]) => yearB - yearA);
+};
+
 const genereerEvenement = (evenement) => {
     const linkContainer = document.createElement("a");
-    linkContainer.href = `./evenementen/${evenement.link}`;
+    linkContainer.href = `./evenementen/${evenement.link}.html`;
 
     const evenementArticle = document.createElement("article");
     linkContainer.appendChild(evenementArticle);
@@ -110,11 +124,30 @@ const genereerEvenementenPerJaartal = (evenementenPerJaar, htmlElement) => {
     }
 };
 
+const genereerEvenementenPerJaartalArray = (perJaarArray, htmlElement) => {
+    for (const [year, events] of perJaarArray) {
+        const h3 = document.createElement("h3");
+        h3.innerHTML = year;
+        htmlElement.appendChild(h3);
+
+        const div = document.createElement("div");
+        div.classList.add("evenementen-lijst");
+        htmlElement.appendChild(div);
+
+        for (const event of events) {
+            const evenementElement = genereerEvenement(event);
+            div.appendChild(evenementElement);
+        }
+    }
+};
+
+
 const genereerVorigeEvenementen = () => {
     const div = document.querySelector("#vorige-evenementen");
     const pastEvents = getVorigeEvenementen(evenementen);
     const eventsPerYear = getEvenementenPerJaar(pastEvents);
-    genereerEvenementenPerJaartal(eventsPerYear, div);
+    const eventsPerYearReverse = sorteerPerJaarOmgekeerdAlsArray(eventsPerYear);
+    genereerEvenementenPerJaartalArray(eventsPerYearReverse, div);
 };
 
 const genereerVolgendeEvenementen = () => {

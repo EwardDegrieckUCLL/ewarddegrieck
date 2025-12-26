@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evenementen</title>
+    <title>Teambuilding Backtrail</title>
 
-    <link rel="icon" href="./img/curacare-logo.png" type="image/png">
+    <link rel="icon" href="../img/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,63 +15,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fragment+Mono:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./styles/root.css">
-    <link rel="stylesheet" href="./styles/nav.css">
-    <link rel="stylesheet" href="./styles/scroll-animation.css">
-    <link rel="stylesheet" href="./styles/evenementen.css">
-
-    <script src="./js/nav.js" defer></script>
-    <script src="./js/scroll-animation.js" defer></script>
-    <script src="./js/evenementen.js" defer></script>
+    <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/scroll-animation.css">
+    <link rel="stylesheet" href="../styles/evenement.css">
+    
+    <script src="../js/evenementHeader.js" defer></script>
+    <script src="../js/nav.js" defer></script>
+    <script src="../js/scroll-animation.js" defer></script>
+    <script src="../js/footer.js" defer></script>
+    <script src="../js/evenement.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="scroll-watcher"></div>
-        <a href="./index.html">
-            <div class="header-logo">
-                <img src="./img/curacare-logo.png" alt="Curacare logo">
-                <p>Curacare</p>
-            </div>
-        </a>
-        <nav>
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul>
-                 <li><a href="./index.html">Start</a></li>
-                <li><a href="./diensten.html">Diensten</a></li>
-                <li class="current-page"><a href="./evenementen.html">Evenementen</a></li>
-                <li><a href="./team.html">Team</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Teambuilding BackTrail</h1>
-            <p>TEST</p>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <section>
-                <h2>Nieuwsbrief</h2>
-                <p>Wil je graag op de hoogte zijn van onze laatste nieuwtjes?</p>
-                <p>Klik dan <a href="">hier</a> om je in te schrijven voor onze nieuwsbrief.</p>
-            </section>
-            <section>
-                <h2>Contactgegevens</h2>
-                <p><a href="mailto:info@curacare.be">info@curacare.be</a></p>
-                <p><a href="tel:">050/00 00 00</a></p>
-            </section>
-            <section>
-                <h2>Ondernemingsnummer</h2>
-                <p>BE99 9999 999</p>
-            </section>
-        </div>
-        <p>&copy; 2026 - Curacare - All Rights Reserved.</p>
-    </footer>
+    <header></header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
+<script>
+    const eventName = "Teambuilding Backtrail"
+    const imgURL = "teambuilding-backtrail.jpeg";
+    const startDate = "2025-11-21";
+    const endDate = "2025-11-23";
+
+    // don't forget to add HTML elements such as <a> and <em>
+    const stringArray = [
+            `Teambuilding werkt pas echt wanneer je ze samen beleeft — en dat deden we tijdens het weekend van 21 tot 23 november met de geweldige ploeg van BackTrail. Een weekend dat opnieuw bevestigde waarom deze samenwerking elk jaar sterker wordt.`,
+            `Voor we dieper in gaan op onze teambuilding zetten we graag Backtrail even in de spotlight! Wie zijn ze en wat doen ze nu eigenlijk?`,
+            `BackTrail is dé referentie voor professionele motortrainingen en motorevents in België. Hun focus op veiligheid, expertise en community sluit perfect aan bij onze medische knowhow. Benieuwd naar hun opleidingen en activiteiten? Neem zeker een kijkje op <a href="https://www.backtrail.be">backtrail.be<a>.`,
+            `Tijdens de teambuilding verzorgde Curacare een intensieve opleiding rond EHBO, reanimatie en slachtofferbenadering. De motivatie en betrokkenheid van het BackTrail-team waren indrukwekkend, wat deze samenwerking alleen maar verder versterkt.`,
+            `Het weekend werd afgesloten met een actieve paintballsessie vol teamwork, adrenaline en plezier. We kijken nu al uit naar de volgende editie — met nieuwe plannen, frisse energie en dezelfde sterke wisselwerking tussen rijvaardigheid en eerste hulp.`
+        ];
+
+        // empty if none needed. Stored in img/eventImg
+        const imgURLs = [];
+
+        // if a YouTube video needs to be added; otherwise just ``. You can get this via YouTube page -> share video -> Embed 
+    const youTubeEmbed = ``;
+</script>

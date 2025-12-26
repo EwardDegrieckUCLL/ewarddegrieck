@@ -1,0 +1,39 @@
+main>img {
+    max-width: 475px;
+    border-radius: 1.5em;
+    box-shadow: var(--shadow);
+}
+
+@media (width < 500px) {
+  main {
+    padding: 2.5vw;
+  }
+  main > img, main > iframe {
+    width: 100%;
+  }
+}
+
+p.p-date {
+  margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+div.event-img {
+  margin: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+    max-width: 800px;
+}
+
+div.event-img img {
+    max-height: 250px;
+    margin: auto;
+    border-radius: 1em;
+}
+
+/* list in text */
+p>ul {
+    list-style: disc;
+}

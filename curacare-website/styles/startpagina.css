@@ -1,3 +1,20 @@
+/* section FOXTROT */
+section.foxtrot img {
+        box-shadow: none;
+        max-height: 500px;
+    }
+
+@media (width < 55rem) {
+    section.foxtrot img {
+        max-height: 400px;
+    }
+}
+
+p#foxtrot-slogan {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
 /* section: sponsors */
 section.sponsors {
     display: flex;

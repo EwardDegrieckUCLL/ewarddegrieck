@@ -95,7 +95,7 @@ main p:last-child {
     margin-bottom: 2em;
 }
 
-ul {
+header ul, footer ul {
     list-style: none;
 }
 
@@ -112,6 +112,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+    font-size: 1.8rem;
     margin-top: 0.75rem;
     text-transform: uppercase;
 }
