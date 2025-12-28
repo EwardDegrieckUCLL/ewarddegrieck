@@ -8,7 +8,7 @@ const evenementen = [
     {naam: "Gravel4air", locatie: "Terziet", land: "NL", startDatum: "2025-06-19", eindDatum: "2025-06-21", fotoURL: "gravel4air.jpg", link: "gravel4air"},
     {naam: "Klimmen tegen MS", locatie: "Mont Ventoux", land: "FR", startDatum: "2025-06-09", eindDatum: null, fotoURL: "klimmen-tegen-MS.jpeg", link: "klimmen-tegen-MS"},
     {naam: "UVA Bochtenstage Ardennen", locatie: "Ardennen", land: "BE", startDatum: "2025-05-11", eindDatum: null, fotoURL: "bochtenstage-ardennen.jpeg", link: "bochtenstage-ardennen"},
-    {naam: "Sporta - Mon Ventoux", locatie: "Mont Ventoux", land: "FR", startDatum: "2024-06-22", eindDatum: null, fotoURL: "sporta-mt-ventoux.jpg", link: "sporta-mont-ventoux"},
+    {naam: "Sporta - Mont Ventoux", locatie: "Mont Ventoux", land: "FR", startDatum: "2024-06-22", eindDatum: null, fotoURL: "sporta-mt-ventoux.jpg", link: "sporta-mont-ventoux"},
     {naam: "Gooische 200 - Gravelride", locatie: "Hilversum", land: "NL", startDatum: "2024-10)05", eindDatum: null, fotoURL: "gooische200.jpeg", link: "gooische200"},
     {naam: "Rijopleiding politie GLM", locatie: "Olen", land: "BE", startDatum: "2025-05-15", eindDatum: null, fotoURL: "rijopleiding-GLM.jpeg", link: "rijopleiding-GLM"},
     {naam: "Fietstocht politie Neteland", locatie: "Grobbendonk", land: "BE", startDatum: "2025-05-22", eindDatum: null, fotoURL: "fietstocht-neteland.jpeg", link: "fietstocht-neteland"},
@@ -91,10 +91,13 @@ const genereerEvenement = (evenement) => {
     imgContainer.classList.add("img-container");
     imgContainer.innerHTML += `<img src="./img/evenementen/${evenement.fotoURL}" alt="foto ${evenement.naam}">`;
     evenementArticle.appendChild(imgContainer);
-
+    
+    const h4Div = document.createElement("div");
+    h4Div.classList.add("h4");
     const h4 = document.createElement("h4");
+    h4Div.appendChild(h4);
     h4.innerHTML = `${evenement.naam}`;
-    evenementArticle.appendChild(h4);
+    evenementArticle.appendChild(h4Div);
 
     const locatieDiv = document.createElement("div");
     locatieDiv.classList.add("locatie");
