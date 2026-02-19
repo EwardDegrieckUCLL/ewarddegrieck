@@ -14,6 +14,8 @@ const evenementen = [
     {naam: "Fietstocht politie Neteland", locatie: "Grobbendonk", land: "BE", startDatum: "2025-05-22", eindDatum: null, fotoURL: "fietstocht-neteland.jpeg", link: "fietstocht-neteland"},
     {naam: "Motorwijding Jette", locatie: "Jette", land: "BE", startDatum: "2025-05-29", eindDatum: null, fotoURL: "motorwijding.jpeg", link: "motorwijding-jette"},
     {naam: "De hel van Klimmen", locatie: "Heuvelland", land: "NL", startDatum: "2025-05-31", eindDatum: null, fotoURL: "hel-van-klimmen.jpeg", link: "hel-van-klimmen"},
+    {naam: "LaCannibale", locatie: "Mont Ventoux", land: "FR", startDatum: "2025-06-28", eindDatum: null, fotoURL: "lacannibale-2025.jpeg", link: "la-cannibale-2025"},
+    {naam: "LaCannibale", locatie: "Mont Ventoux", land: "FR", startDatum: "2026-06-26", eindDatum: "2026-06-26", fotoURL: "lacannibale-2026.jpg", link: "la-cannibale-2026"},
 ];
 
 const maanden = [

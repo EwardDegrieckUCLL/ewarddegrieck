@@ -99,7 +99,7 @@ header ul, footer ul {
     list-style: none;
 }
 
-img {
+img, video{
     display: block;
     height: auto;
     max-width: 100%;
@@ -146,7 +146,7 @@ section:last-child {
 }
 
 /* sections with image */
-main section img {
+main section img, main section video {
     max-width: 425px;
     border-radius: 1em;
     box-shadow: var(--shadow);
